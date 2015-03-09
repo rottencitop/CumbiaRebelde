@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'oddpress';
+    src: url('../css/odd_press-webfont.eot');
+    src: url('../css/odd_press-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/odd_press-webfont.woff') format('woff'),
+         url('../css/odd_press-webfont.ttf') format('truetype'),
+         url('../css/odd_press-webfont.svg#odd_pressregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'headliner';
+    src: url('../css/headliner-webfont.eot');
+    src: url('../css/headliner-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/headliner-webfont.woff') format('woff'),
+         url('../css/headliner-webfont.ttf') format('truetype'),
+         url('../css/headliner-webfont.svg#headliner_no._45regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	display:none;
+	font-size:14px;
+}
+#wrapperreproductor{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+	z-index:1000;
+}
+#reproductor{
+	background:rgba(255,255,255,1);
+	position:absolute;
+	width:640px;
+	height:360px;
+	padding:5px;
+	border-radius:3px;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+	top:50%;
+	left:50%;
+	margin-top:-180px;
+	margin-left:-320px;
+}
+#wrapperclose{
+	position:relative;
+}
+#close{
+	position:absolute;
+	cursor:pointer;
+	top:0%;
+	left:102%;
+	width:16px;
+	height:16px;
+}
+#close img{
+	width:100%;
+}
+#container{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+header{
+	background:rgba(0,0,0,0.4);
+	margin-bottom:2em;
+}
+header #logo{
+	padding:0.3em 0;
+}
+header nav{
+	background-color:rgba(0,0,0,0.8);
+	padding:0.5em 0;
+}
+header nav ul{
+	list-style:none;
+	text-align:center;
+}
+header nav ul a{
+	color:#FFF;
+}
+header nav ul li{
+	display:inline-block;
+	font-family:'headliner';
+	font-size:1.5em;
+	letter-spacing:1px;
+	margin:0 1em;
+}
+
+
+/*Fin Header
+Estilo Contenido*/
+#wrappercontenido{
+	background:rgba(0,0,0,0.8);
+	padding:0.5em;
+}
+
+#wrapperultimasnoticias, #wrapperultimosvideos,#wrapperbandas,#wrapperconcurso, #wrapperbanda, #wrappergaleriabanda,#wrapperdiscografiabanda, #wrappernoticia{
+	margin-top:2em;
+	padding:0.6em;
+	background:rgba(255,255,255,1);
+	position:relative;
+}
+#wrapperultimasnoticias, #wrapperbanda, #wrappergaleriabanda{
+	margin-bottom:3em;
+}
+#wrapperultimasnoticias h1, #wrapperultimosvideos h1, #wrapperbandas h1, #wrapperconcurso h1,#wrapperbanda h1,#wrappergaleriabanda h1,#wrapperdiscografiabanda h1,#wrappernoticia h1{
+	color:#FFF;
+	position:absolute;
+	bottom: 100%;
+	font-size:2em;
+	left:1%;
+	font-family:'headliner';
+	letter-spacing:1px;
+	font-weight:normal;
+}
+#wrappernoticia h1{
+	font-family:'oddpress';
+	text-transform:uppercase;
+}
+#ultimasnoticias{
+	color:#000;
+	position:relative;
+}
+.ultimanoticia{
+	width:100%;
+	position:relative;
+}
+.ultimanoticia img{
+	width:100%;
+	vertical-align:top;
+}
+.ultimanoticia h2{
+	position:absolute;
+	width:98%;
+	display:block;
+	bottom:0;
+	padding:0.5% 1%;
+	background:rgba(0,0,0,0.4);
+	font-family:'oddpress';
+	font-size:2.2em;
+	text-transform:uppercase;
+	font-weight:normal;
+	color:#FFF;
+}
+
+#ultimosvideos{
+	font-size:0;
+}
+
+.ultimovideo{
+	display:inline-block;
+	cursor:pointer;
+	width:24%;
+	margin:0 0.5%;
+	opacity:0.9;
+	transition:all 0.3s;
+}
+.ultimovideo:hover{
+	opacity:1;
+}
+.ultimovideo img{
+	width:96%;
+	padding:2%;
+	border:1px solid rgba(0,0,0,0.2);
+	vertical-align:top;
+}
+/*bandas.html*/
+.irbio{
+	font-family:'oddpress';
+	text-transform:uppercase;
+	font-size:2em;
+	color:#FFF;
+}
+#bandas{
+	font-size:0;
+}
+.banda{
+	display:inline-block;
+	width:49%;
+	margin:0.5%;
+	box-shadow:0 2px 1px rgba(0,0,0,0.1);
+	opacity:0.9;
+	transition:all 0.3s;
+}
+.banda:hover{
+	opacity:1;
+}
+.banda img{
+	width:96%;
+	padding:2%;
+	border:1px solid rgba(0,0,0,0.2);
+	vertical-align:top;
+}
+
+
+/*Diseño página de las Bandas*/
+
+#banda{
+}
+
+#logobanda{
+	width:40%;
+	padding:1%;
+	margin:0 1% 1% 0;
+	border:1px solid rgba(0,0,0,0.2);
+	float:left;
+}
+#logobanda img{
+	width:100%;
+	vertical-align:top;
+}
+#biografiabanda{
+	font-family:strong,sans-serif;
+	font-size:1.2em;
+	color:#555;
+}
+#biografiabanda p{
+	margin-bottom:0.5em;
+}
+#galeria{
+	font-size:0;
+}
+.imagengaleria{
+	display:inline-block;
+	width:24%;
+	margin:0.5%;
+}
+.imagengaleria img{
+	width:96%;
+	padding:2%;
+	border:1px solid rgba(0,0,0,0.2);
+	vertical-align:top;
+}
+#discografia{
+	position:relative;
+	font-size:0;
+	width:60%;
+	margin:0 auto;
+}
+#prev{
+	position:absolute;
+	left:1%;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	opacity:0.9;
+	background:url(../images/left.jpg) no-repeat;
+}
+#next{
+	position:absolute;
+	right:1%;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	opacity:0.9;
+
+	background:url(../images/right.jpg) no-repeat;
+}
+/*Plantilla para las noticias*/
+
+#noticia{
+}
+#noticia img{
+	float:left;
+	width:45%;
+	padding:1%;
+	margin: 0 1% 0.5% 0;
+	border:1px solid rgba(0,0,0,0.2);
+}
+
+#noticia p{
+	margin-bottom:0.5em;
+	font-family:strong;
+	font-size:1.2em;
+}
+
+
+/*participa.html*/
+#formConcurso{
+	width:80%;
+	margin:0 auto;
+}
+#formConcurso fieldset{
+	padding:1%;
+}
+#formConcurso fieldset legend{
+	font-family:oddpress;
+	font-size:2em;
+}
+#formConcurso fieldset div{
+	margin:5px 0;
+}
+#formConcurso fieldset div span{
+	color:red;
+}
+.error{
+	border:1px solid #f00;
+}
+#formConcurso fieldset div label{
+	font-family:Arial,sans-serif;
+	text-transform:uppercase;
+	font-size:1em;
+	width:28%;
+	display:inline-block;
+}
+#formConcurso fieldset div input[type=text]{
+	width:40%;
+	padding:0.5%;
+}
+/*Pie de página*/
+
+footer{
+	width:98%;
+	padding:1%;
+	background:rgba(0,0,0,0.95);
+	color:#FFF;
+	text-transform:uppercase;
+	font-family:Arial, sans-serif;
+	font-size:0.8em;
+}
+
+
+#opcionesadmin{
+	vertical-align:top;
+	display:inline-block;
+	width:30%;
+}
+#opcionesadmin h3{
+	font-family: headliner;
+	font-weight:normal;
+}
+.opcionadmin{
+	width:98%;
+	padding:1%;
+	margin:0 0 5px 0;
+	font-family:Arial,sans-serif;
+	text-align:center;
+	background:rgba(0,0,0,0.1);
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#222;
+	text-shadow:0 1px 0 rgba(255,255,255,1);
+	cursor:pointer;
+}
+#resopcionesadmin{
+	vertical-align:top;
+	width:66%;
+	margin:0 1%;
+	padding:0.5%;
+	display:inline-block;
+}
+#resopcionesadmin form fieldset{
+	padding:10px;
+}
+#resopcionesadmin form fieldset input,#resopcionesadmin form fieldset textarea{
+	display:block;
+}
+
+.idvideo,.idnoticia{
+	display:inline-block;
+	width:10%;
+	vertical-align:top;
+}
+.titulovideo, .titulonoticia, .nombrebanda{
+	display:inline-block;
+	width:50%;
+	vertical-align:top;
+}
+.opcionesvideo, .opcionesnoticia,.opcionesbanda{
+	display:inline-block;
+	width:20%;
+	vertical-align:top;
+}
+.opcionesvideo button, .opcionesnoticia button, .opcionesbanda button{
+	display:inline-block;
+	margin:0px 3px;
+}
